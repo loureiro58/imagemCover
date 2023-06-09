@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+.cartao {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+.cartao .circulo {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 180px;
+    height: 180px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 5px solid #000;
+}
+
+.cartao .circulo .caixaDaImagem{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.cartao .circulo .caixaDaImagem img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
